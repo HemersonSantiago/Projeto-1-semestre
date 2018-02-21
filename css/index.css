@@ -1,0 +1,182 @@
+/*Resetando tamanhos da página*/
+*{
+	margin:0;
+	padding:0;
+
+}
+
+/*Cor de Fundo da página*/
+body{
+	background-image: linear-gradient(to top, #696969 ,#DCDCDC );
+}
+
+/*Cor de fundo do header*/
+header{
+		background-color: black;
+}
+
+/*Flutuação do menu, definição de fonte*/
+nav li{
+	float:right;
+	list-style:none;
+	margin:0px 8px;
+	font-family:oswald, arial;
+}
+
+/*Posicionamento do menu*/
+nav{
+	height:40px;
+	position: relative;
+	right: 100px;
+	bottom: 60px;
+}
+
+/*Retirado o sublinhado do menu e definido a cor branca da fonte*/
+nav a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*Adicionada a cor laranja ao passar o mouse em cima do menu*/
+nav a:hover{
+	color:#e5a52d;
+}
+
+/* submenu*/
+nav li ul{
+	display: none;
+}
+
+/*submenu*/
+nav li:hover ul{
+	display: block;
+	position: relative;	
+}
+
+/*submenu*/
+nav li:hover li{
+	float:none;
+	font-size:12px;
+}
+
+/*Definido tamanho do logo e posicionamento do mesmo*/
+.imagem{
+	width:100px; /*largura*/	
+	padding-left:25px;
+	padding-top:5px;
+	position: relative;
+	
+}
+
+/*Posicionamento do slide dentro da Div, largura e altura da imagem*/
+.galeria{
+	margin: 50px auto;
+	width: 100%;
+	height: 600px; /*altura*/
+	position: relative;
+	overflow: hidden;	
+}
+
+/*Animação do slide, interação, largura e altura definido em 100% para visualizar todo conteúdo da imagem*/
+.foto{
+	position: absolute;
+	opacity: 0;
+	animation: animacao;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	width: 100%;
+	height: 100%;
+}
+
+/*Tempo de animação das imagens no slide*/
+@keyframes animacao{
+	25%{
+		opacity: 1;
+		transform:scale(1.1,1.1);
+	}
+	50%{
+		opacity: 0;
+	}
+
+}
+.foto:nth-child(1){
+
+}
+.foto:nth-child(2){
+	animation-delay: 5s;
+}
+.foto:nth-child(3){
+	animation-delay: 10s;
+}
+.foto:nth-child(4){
+	animation-delay: 15s;
+}
+
+/*Posionamento do titulo da página, tamanho da fonte, definição da fonte e cor da fonte*/
+section h2{
+	padding-top: 50px;
+	text-align: center;
+	font-size: 30px;
+	font-family: arial;
+	color: white;
+}
+
+/*Posicionamento do conteúdo dentro das sessões até a linha 69 do html*/
+.parad{
+	padding-top: 60px;
+	float:left;
+	padding-left:50px;
+	width:25%;
+}
+
+
+/*Posicionamento das imagens dentro das sessões até a linha 69 do html*/
+.parad img{
+	border-radius:50%;
+	width:100px;
+	height:100px;
+	margin-left:50px;		
+}
+
+/*Tamanho da fonte do titulo h3 dentro das sessões até linha 69, definição de larguda, cor e cor de fundo*/
+.parad h3{
+	float: right;
+	font-size:16px;
+	width: 60%;
+	color:white;
+	background-color: #FFA600;
+	padding-left: 87px;
+}
+
+/*Cor do parágrafo e posição, dentro das sessões até linha 69*/
+.paragrafo{
+	padding-left:50px;
+	color:white;
+}
+
+/*Posicionamento da sessão que baixa a validação, cor do link e retirado sublinhado*/
+section a {
+	text-decoration: none;
+	color: #191970;
+	position: relative;
+	top: 20px;
+	padding-left: 585px;
+	height: 50px;
+	width: 96.2%;
+
+}
+	
+/*Tamanho e posiconamento do footer e definição de cor de fundo*/
+footer{
+	margin-top: 50px;
+	padding-left: 50px;
+	height: 50px;
+	width: 96.2%;
+	background-color: #ccc;
+}
+
+/*Posição do  conteúdo do footer*/
+footer p{
+	padding-top: 15px;
+	text-align: center;
+}

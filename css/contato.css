@@ -1,0 +1,163 @@
+/*Resetando tamanhos da página*/
+*{
+	margin:0;
+	padding:0;
+
+}
+
+/*Cor de Fundo da página*/
+body{
+	background-image: linear-gradient(to top, #696969 ,#DCDCDC );
+}
+
+/*Cor de fundo do header*/
+header{
+	background-color: black;
+}
+
+/*Flutuação do menu, definição de fonte*/
+nav li{
+	float:right;
+	list-style:none;
+	margin:0px 8px;
+	font-family:oswald, arial;
+}
+
+/*Posicionamento do menu*/
+nav{
+	height:40px;
+	position: relative;
+	right: 100px;
+	bottom: 60px;
+}
+
+/*Retirado o sublinhado do menu e definido a cor branca da fonte*/
+nav a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*Adicionada a cor laranja ao passar o mouse em cima do menu*/
+nav a:hover{
+	color:#e5a52d;
+}
+
+/* submenu*/
+nav li ul{
+	display: none;
+}
+
+/*submenu*/
+nav li:hover ul{
+	display: block;
+	position: relative;	
+}
+
+/*submenu*/
+nav li:hover li{
+	float:none;
+	font-size:12px;
+}
+
+/*Definido tamanho do logo e posicionamento do mesmo*/
+.imagem{
+	width:100px;	
+	padding-left:25px;
+	padding-top:5px;
+	position: relative;
+	top:30px;
+}
+
+/*Posição, fonte, cor, e tamanho do titulo*/
+h1{
+	padding-top: 50px;
+	text-align: center;
+	text-transform:uppercase;
+	font-size:30px;
+	font-family: arial;
+	color:white;
+}
+
+/*Posição top, fonte, cor, e tamanho do titulo*/
+h2{
+	padding: 80px 0px 60px 0;
+	text-transform:uppercase;
+	font-size:1.3em;
+	font-family: arial;
+	color:black;
+	font-family: oswald;
+}
+
+/*posição lateral*/
+form, h2{
+	padding-left: 100px; 
+}
+label, textarea{
+	display: block;
+}
+
+/*botão de envio, cor da fonte, cor de funto e tamanho*/
+input[type="submit"]{
+	background:lightgray;
+	color: black;
+	cursor:pointer;
+	padding: 10px 20px;	
+	border: 0;
+}
+
+/*cor de fundo ao passar o mouse em cima do botão de enviar*/
+input[type="submit"]:hover{
+	background:#e5a52d
+
+}
+
+/*largura e altura do campo escreva msg*/
+textarea{
+	width: 500px;
+	height: 180px;
+}
+
+/*largura e altura do nome, email, tel  e assunto*/
+input[type="text"]{
+	height: 20px;
+	width: 400px;
+}
+
+/*Posição  do nosso email e tel, cor de fundo e tamanho de fonte  */
+section p, h3{	
+	position: relative;
+	padding-left:860px;
+	top: -500px;
+	color:white;
+	margin-left:10px;
+	font-size: 1.1em;
+	clear: both;
+}
+
+/*Fonte do h3, tamanho da fonte e cor*/
+section h3{
+	font-family: oswald;
+	font-size: 1.3em;
+	color:black;
+}
+
+/*Posicionamento da sessão que baixa a validação, cor do link e retirado sublinhado*/
+h4, section a{
+	text-align: center;	
+	text-decoration: none;
+	color: #191970;
+}
+
+footer{
+	margin-top: 50px;
+	padding-left: 50px;
+	height: 50px;
+	width: 96.2%;
+	background-color: #ccc;
+}
+
+/*Posição do  conteúdo do footer*/
+footer p{
+	padding-top: 15px;
+	text-align: center;
+}

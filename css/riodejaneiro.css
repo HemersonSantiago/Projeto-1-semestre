@@ -1,0 +1,171 @@
+/*Resetando tamanhos da página*/
+*{
+	margin:0;
+	padding:0;
+
+}
+
+/*Cor de Fundo da página*/
+body{
+	background-image: linear-gradient(to top, #696969 ,#DCDCDC );
+}
+
+/*Cor de fundo do header*/
+header{
+	background-color: black;
+}
+
+/*Flutuação do menu, definição de fonte*/
+nav li{
+	float:right;
+	list-style:none;
+	margin:0px 8px;
+	font-family:oswald, arial;
+}
+
+/*Posicionamento do menu*/
+nav{
+	height:40px;
+	position: relative;
+	right: 100px;
+	bottom: 60px;
+}
+
+/*Retirado o sublinhado do menu e definido a cor branca da fonte*/
+nav a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*Adicionada a cor laranja ao passar o mouse em cima do menu*/
+nav a:hover{
+	color:#e5a52d;
+}
+
+/* submenu*/
+nav li ul{
+	display: none;
+}
+
+/*submenu*/
+nav li:hover ul{
+	display: block;
+	position: relative;	
+}
+
+/*submenu*/
+nav li:hover li{
+	float:none;
+	font-size:12px;
+}
+
+/*Definido tamanho do logo e posicionamento do mesmo*/
+.imagem{
+	width:100px;	
+	padding-left:25px;
+	padding-top:5px;
+	position: relative;
+	top:30px;
+}
+/*Posicionamento do h1, tamanho, nome e cor da fonte*/
+h1{
+	padding-top:50px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size:30px;
+	font-family: arial;
+	color:white;
+}
+
+/*Largura e altura das imagens no slide*/
+div img{
+	width: 1024px;
+	height: 600px;
+}
+
+/*Posicionamento das imagens no slide*/
+.slider {
+	width: 1024px;
+	height: 00px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+/*Posicionamento do texto dentro do slide, definição de cor de fundo, largura e altura*/
+.slider-item p {
+	padding: 10px;
+	width: 300px;
+	font:normal 13px arial;
+	line-height: 20px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+/* Posição   e criação do botão de seleção das imagens no slide */
+.pager{
+	position: absolute;
+	z-index: 999;
+	top: 800px;
+	right: 570px;
+}
+
+/*Ajustes de exibição do botão de seleção das imagens no slide*/
+.pager a{
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	background: orange;
+	float: left;
+	margin: 0px 5px;
+	cursor: pointer;
+}
+
+/*Troca de cor no botão de seleção do slide ao passar o mouse*/
+.pager a:hover{
+	background: #06c;
+}
+
+/*Troca de cor no botão de seleção do slide automatico*/
+.pager a.sliderativado{
+	background: #06c;
+}
+
+/*Posicionamento e cor do paragrafo*/
+section p{
+	padding-top: 30px;
+	color: white;
+	text-align: center;
+	margin: 20px 100px;
+ 	 
+}
+
+/*Posição do link de validacao da pagina*/
+h4, section a {
+	text-align: center;	
+	padding-top: 30px;
+	text-decoration: none;
+	color: #191970;
+}
+
+/*Tamanho e posiconamento do footer e definição de cor de fundo*/
+footer{
+	margin-top: 50px;
+	padding-left: 50px;
+	height: 50px;
+	width: 96.2%;
+	background-color: #ccc;
+}
+
+/*Posição do  conteúdo do footer*/
+footer p{
+	padding-top: 15px;
+	text-align: center;
+}
+

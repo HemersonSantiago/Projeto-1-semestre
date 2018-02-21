@@ -1,0 +1,146 @@
+/*Resetando tamanhos da página*/
+*{
+	margin:0;
+	padding:0;
+
+}
+
+/*Cor de Fundo da página*/
+body{
+	background-image: linear-gradient(to top, #696969 ,#DCDCDC );
+}
+
+/*Cor de fundo do header*/
+header{
+	background-color: black;
+}
+
+/*Flutuação do menu, definição de fonte*/
+nav li{
+	float:right;
+	list-style:none;
+	margin:0px 8px;
+	font-family:oswald, arial;
+}
+
+/*Posicionamento do menu*/
+nav{
+	height:40px;
+	position: relative;
+	right: 100px;
+	bottom: 60px;
+}
+
+/*Retirado o sublinhado do menu e definido a cor branca da fonte*/
+nav a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*Adicionada a cor laranja ao passar o mouse em cima do menu*/
+nav a:hover{
+	color:#e5a52d;
+}
+
+/* submenu*/
+nav li ul{
+	display: none;
+}
+
+/*submenu*/
+nav li:hover ul{
+	display: block;
+	position: relative;	
+}
+
+/*submenu*/
+nav li:hover li{
+	float:none;
+	font-size:12px;
+}
+
+/*Definido tamanho do logo e posicionamento do mesmo*/
+.imagem{
+	width:100px;	
+	padding-left:25px;
+	padding-top:5px;
+	position: relative;
+	top:30px;
+}
+
+/*Posicionamento do h1, tamanho, nome e cor da fonte*/
+h1{
+	padding-top:50px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size:30px;
+	font-family: arial;
+	color:white;
+}
+
+/*Tamanho da imagem apos h1, dentro da sessão.*/
+.profissional{
+	width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+/*posição do parágrado dentro da section até a linha 32 do html*/
+.paragrafo{
+	margin: 40px;
+	color:white;
+}
+
+/*Posição, largura, altura das imagens dos autores, e colodado efeito border-radius*/
+.autor{
+	margin: 10px;
+	width: 130px;
+	height: 130px;
+	position: relative;
+	top: 40px;
+	left: 40px;
+	border-radius: 50%;
+}
+
+/*Posicionamento,  e cor do texto sobre os autores*/
+.parad{
+	position: relative;
+	padding-left:200px;
+	bottom:45px;
+	color:white;
+	margin-left:10px;
+}
+
+
+/*Posicionamento da sessão que baixa a validação, cor do link e retirado sublinhado*/
+section a{
+	text-decoration: none;
+	color: #191970;
+	position: relative;
+	top: 20px;
+	left: 400px;
+	height: 50px;
+	width: 96.2%;
+}
+
+/*Posicionamento da sessão que baixa o fluxograma e wireframe*/
+.lado a {
+	position: relative;
+	top: 2px;
+	left: 750px;
+}	
+
+/*Tamanho e posiconamento do footer e definição de cor de fundo*/
+footer{
+	margin-top: 50px;
+	padding-left: 50px;
+	height: 50px;
+	width: 96.2%;
+	background-color: #ccc;
+}
+
+/*Posição do  conteúdo do footer*/
+footer p{
+	padding-top: 15px;
+	text-align: center;
+}
